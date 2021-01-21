@@ -9,7 +9,7 @@ package www.zx.com.bean;
  * @create: 2021-01-19-11:48 AM
  */
 public class ReverseList {
-    //借助reverse,规划为长度为n的链表反转，多余的部分先记下为tail,反转后接上tail
+
     static ListNode tail = null; // 后驱节点
 
     //压栈,找到最后一个节点，然后锁定最后一个节点为head,出栈时指向互换。
@@ -27,7 +27,7 @@ public class ReverseList {
         listNode.next = null;
         return head;
     }
-
+    //借助reverse,规划为长度为n的链表反转，多余的部分先记下为tail,反转后接上tail
     private static ListNode reverseN(ListNode listNode, int n) {
         if (listNode == null)
         {
